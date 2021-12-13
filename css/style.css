@@ -145,7 +145,7 @@ body {
     white-space: nowrap;
     cursor: pointer;
     font-size: 30px;
-    color: #ccc;
+    color: #6c5353;
 }
 
 .review-text .rate:not(:checked)>label:before {
