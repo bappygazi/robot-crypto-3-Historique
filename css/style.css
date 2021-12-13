@@ -1,0 +1,176 @@
+/*common part css*/
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* font-family css */
+@font-face {
+    src: url(../webfonts/Lufga-Thin.otf);
+    font-family: Lufga-Thin;
+}
+
+@font-face {
+    src: url(../webfonts/Lufga-Light.otf);
+    font-family: Lufga-Light;
+}
+
+@font-face {
+    src: url(../webfonts/Lufga-SemiBold.otf);
+    font-family: Lufga-SemiBold;
+}
+
+@font-face {
+    src: url(../webfonts/Lufga-Bold.otf);
+    font-family: Lufga-Bold;
+}
+
+body {
+    background-color: #c6c6c6;
+}
+
+.title-text {
+    color: #000;
+    font-size: 18px;
+    font-family: Lufga-SemiBold;
+}
+
+/* .selector-btn */
+.selector-btn {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    background: #fcfff4;
+    background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.selector-btn .label-point {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
+}
+
+.selector-btn .label-point:after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #27ae60;
+    background: linear-gradient(to bottom, #27ae60 0%, #145b32 100%);
+    opacity: 0;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.selector-btn .label-point:hover::after {
+    opacity: 0.3;
+}
+
+.selector-btn input[type=radio] {
+    visibility: hidden;
+}
+
+.selector-btn input[type=radio]:checked+.label-point:after {
+    opacity: 1;
+}
+
+.bg-offwhite {
+    background-color: #eae9e9;
+}
+
+.radio-text {
+    color: #000;
+    font-size: 18px;
+    font-family: Lufga-Light;
+}
+
+.help-radio {
+    top: 40px;
+    right: 0;
+}
+
+.review-text h4 {
+    color: #000;
+    font-size: 18px;
+    line-height: 5px;
+    font-family: Lufga-Light;
+}
+
+/* review star rate part css */
+.review-text .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.review-text .rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.review-text .rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.review-text .rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.review-text .rate>input:checked~label {
+    color: #ffc700;
+}
+
+.review-text .rate:not(:checked)>label:hover,
+.review-text .rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.review-text .rate>input:checked+label:hover,
+.review-text .rate>input:checked+label:hover~label,
+.review-text .rate>input:checked~label:hover,
+.review-text .rate>input:checked~label:hover~label,
+.review-text .rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
