@@ -24,6 +24,19 @@ a:hover {
     text-decoration: none;
 }
 
+.pt-70 {
+    padding-top: 70px !important;
+}
+
+.mr-45 {
+    margin-right: 45px;
+}
+
+.select-box {
+    overflow-y: scroll;
+    right: 3px;
+}
+
 /* font-family css */
 @font-face {
     src: url(../webfonts/Lufga-Thin.otf);
@@ -119,6 +132,16 @@ body {
     right: 0;
 }
 
+.real-header h4 {
+    font-size: 30px;
+    font-family: Lufga-SemiBold;
+}
+
+.real-header p {
+    font-size: 20px;
+    font-family: Lufga-Light;
+}
+
 .review-text h4 {
     color: #000;
     font-size: 18px;
@@ -126,11 +149,87 @@ body {
     font-family: Lufga-Light;
 }
 
+/* Real real-realm */
+.comparison-selector::before {
+    left: 50%;
+    transform: translateX(-800%);
+    top: 30px;
+    width: 3px;
+    content: '';
+    height: 90%;
+    position: absolute;
+    background-color: #afafaf;
+}
+
+.input-box {
+    z-index: 1;
+}
+
+.angle-icon {
+    z-index: -1;
+    top: -22px;
+    left: 51%;
+    transform: translate(-50%);
+}
+
+.selector-btn-lg {
+    height: 35px;
+    width: 35px;
+}
+
+.selector-btn-lg .label-point {
+    height: 27px;
+    width: 27px;
+}
+
+.selector-btn-lg .label-point::after {
+    width: 22px;
+    height: 22px;
+}
+
+.comparison-text {
+    color: #cc0a0a;
+    font-size: 20px;
+    font-family: Lufga-SemiBold;
+}
+
+.search-icon:hover .hover-search {
+    display: block !important;
+}
+
+.search-icon:hover .search {
+    display: none !important;
+}
+
+/* POPUP content  */
+.modal-dialog {
+    max-width: 700px;
+}
+
+.slider-item h4 {
+    font-size: 20px;
+    color: #000;
+    font-family: Lufga-Bold;
+}
+
+.left-arrow {
+    top: 50%;
+    left: 10px;
+    font-size: 40px;
+    transform: translateY(-50%);
+}
+
+.right-arrow {
+    top: 50%;
+    right: 10px;
+    font-size: 40px;
+    transform: translateY(-50%);
+}
+
 /* review star rate part css */
 .review-text .rate {
     float: left;
     height: 46px;
-    padding: 0 10px;
 }
 
 .review-text .rate:not(:checked)>input {
