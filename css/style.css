@@ -156,7 +156,7 @@ body {
     top: 30px;
     width: 3px;
     content: '';
-    height: 90%;
+    height: 100%;
     position: absolute;
     background-color: #afafaf;
 }
@@ -202,9 +202,6 @@ body {
 }
 
 /* POPUP content  */
-.modal-dialog {
-    max-width: 700px;
-}
 
 .slider-item h4 {
     font-size: 20px;
@@ -212,17 +209,21 @@ body {
     font-family: Lufga-Bold;
 }
 
-.left-arrow {
+.owl-prev {
     top: 50%;
-    left: 10px;
-    font-size: 40px;
+    left: -20px;
+    color: #0b92f0 !important;
+    position:absolute;
+    font-size: 80px !important;
     transform: translateY(-50%);
 }
 
-.right-arrow {
+.owl-next {
     top: 50%;
-    right: 10px;
-    font-size: 40px;
+    right: -20px;
+    color: #0b92f0 !important;
+    position:absolute;
+    font-size: 80px !important;
     transform: translateY(-50%);
 }
 
@@ -245,6 +246,9 @@ body {
     cursor: pointer;
     font-size: 30px;
     color: #6c5353;
+}
+.srat-width .rate:not(:checked)>label {
+    width: 26px;
 }
 
 .review-text .rate:not(:checked)>label:before {
